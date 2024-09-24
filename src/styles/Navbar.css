@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens igualmente entre a esquerda, centro e direita */
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os itens */
+}
+
+.navbar-left a,
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.navbar-center {
+  position: relative;
+  width: 50vw; /* O input tem 50% da largura da tela */
+}
+
+.search-input {
+  width: 100%; /* O input preenche toda a largura da parte central */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  width: 100%;
+  z-index: 10;
+}
+
+.dropdown h4 {
+  margin: 0;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 8px 10px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown li:hover {
+  background-color: #f1f1f1;
+}
